@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <a href="https://www.aluracursos.com/?gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtdYsq5OFVmTTF4VHGlPd7oFLFSB06RH1O7ZTACr7VCL8QXtCyDPvvoaAt64EALw_wcB" target="_blank">
+            <img src="imagenes/alura-latam.png" alt="Logo Alura Latam " class="aluraLogo" title="Alura Latam">
+            </a>  
+            <h2>X</h2>
+            <a href="https://www.linkedin.com/in/edwin-abadillo/" target="_blank" class="rulzLogo">
+            <img src="imagenes/logo rulz.png" alt="Logo Rulz" title="Edwin Abadillo">
+            </a> 
+            <h3>Challenge Encriptador / Creador Edwin Abadillo</h3>
+        </div>       
+    </header>
+
+    <main>
+        <form class="ingresartexto">
+            <textarea id="ingresotxt" placeholder="Ingrese texto aqui" class="ingresotxt" title=" ⚠ Solo se puede ingresar letras minusculas"></textarea>
+            <textarea id="resultadoEncriptacion" class="resultadoEncriptacion"></textarea>
+            <nav class="logicaEncriptador">
+                <ul>
+                    <li><a href="#" class="encriptador" onclick="Encriptador(event)">Encriptador</a></li>
+                    <li><a href="#" class="desencriptador" onclick="Desencriptador(event)">Desencriptador</a></li>                  
+                    <li><a href="#" class="copiar" onclick="copiarTexto()">Copiar</a></li>
+                    <li><a href="#" class="limpiar texto" onclick="limpiartexto()">Deshacer</a></li>
+                </ul>
+            </nav>
+        </form>
+    </main>
+    <script src="challenge-encriptador.js" defer></script>
+</body>
+</html>
